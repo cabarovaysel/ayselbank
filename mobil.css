@@ -1,0 +1,1023 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Co Headline W';
+}
+
+@font-face {
+    font-family: 'Co Headline W';
+    src: url('CoHeadlineW-Regular.woff2') format('woff2'),
+        url('CoHeadlineW-Regular.woff') format('woff'),
+        url('CoHeadlineW-Regular.svg#CoHeadlineW-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.desktop {
+    display: none;
+}
+
+
+.dashboard {
+    display: none;
+}
+
+.profile {
+    display: none;
+}
+
+.newcard {
+    display: none;
+}
+
+.finance-section {
+    display: none;
+}
+
+.card_main {
+    display: none;
+}
+
+.wallet {
+    display: none;
+}
+
+.topup-section{
+    display: none;
+}
+
+@media (max-width:768px) {
+
+    .desktop {
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+
+    main {
+        width: 100%;
+        background-image: url('img/WhatsApp\ Görsel\ 2025-10-21\ saat\ 18.35.29_60364970.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Gelion, Helvetica, "Helvetica Neue", Arial;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 50px;
+    }
+
+    .start {
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+
+    .start #button {
+        width: 100%;
+        border-radius: 13px;
+        background-color: white;
+        font-weight: bold;
+        text-decoration: none;
+        color: #111;
+        padding: 20px;
+
+    }
+
+    .regstration {
+        width: 100%;
+        background-image: none;
+        background-color: #19191A;
+        color: white;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 20px;
+
+    }
+
+    .regstration h1 {
+        margin-bottom: 15px;
+        font-size: 2.2em;
+        font-weight: 700;
+    }
+
+    .admin form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+
+    }
+
+    .admin form .email {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .admin form .email>input {
+        border: 1px solid #fff;
+        padding: 15px 8px;
+        border-radius: 15px;
+        background-color: transparent;
+        margin-top: 10px;
+    }
+
+    .admin form .button-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .admin form .button-group a {
+        color: #fff;
+    }
+
+    .admin form .button-group button {
+        width: 100%;
+        padding: 15px 8px;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .divider {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ccc;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .divider::before,
+    .divider::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #444;
+
+    }
+
+    .divider::before {
+        margin-right: 20px;
+    }
+
+    .divider::after {
+        margin-left: 20px;
+    }
+
+    .bottom-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .bottom-main a {
+        color: white;
+    }
+
+    .bottom-main button {
+        width: 100%;
+        padding: 15px 8px;
+        border-radius: 15px;
+        border: none;
+        color: #fff;
+        background-color: #2E2E2E;
+    }
+
+
+    .dashboard {
+        width: 100%;
+        display: block;
+    }
+
+    .dashboard-page {
+        background-color: black;
+        color: white;
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+    .dashboard-page .header-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 15px;
+    }
+
+
+    .dashboard-page .header-section .profile-icon {
+        width: 25px;
+    }
+
+    .dashboard-page .header-section .profile-icon img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-size: cover;
+    }
+
+
+
+
+
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 17px;
+        gap: 3px;
+    }
+
+    .dots .dot {
+
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+
+
+    }
+
+    .income-exspenses {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .income-exspenses .income,
+    .exspenses {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background-color: #2E2E2E;
+        border-radius: 15px;
+        padding: 12px 25px 10px 10px;
+        margin: 0 0 30px 0;
+    }
+
+
+
+
+    .income-exspenses .income .in i {
+        padding: 3px;
+        background-color: green;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        color: black;
+    }
+
+
+    .income-exspenses .exspenses .ex i {
+        padding: 3px;
+        background-color: red;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        color: black;
+    }
+
+
+
+
+    .text p {
+        font-size: 12px;
+    }
+
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 20px;
+        box-shadow: 0 0 9px 4px rgb(235, 235, 235);
+        background-color: #fff;
+    }
+
+    nav a {
+        color: black;
+    }
+
+    .profile {
+        display: block;
+    }
+
+
+    .profile {
+        width: 100%;
+        background-color: black;
+        color: white;
+
+    }
+
+    .profile-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 15px;
+
+
+    }
+
+    .profile-header i {
+        color: white;
+    }
+
+    .profile-header .profile-img {
+        width: 30px;
+    }
+
+    .profile-header img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-size: cover;
+    }
+
+    .profile .profile-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .profile .profile-section .profile-section-img {
+        width: 210px;
+        height: 200px;
+    }
+
+
+    .profile .profile-section .profile-section-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-size: cover;
+    }
+
+
+
+    .profile .profile-settings {
+        padding: 55px;
+    }
+
+
+    .profile .profile-settings .settings {
+        display: flex;
+        gap: 25px;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .profile .profile-settings .settings i {
+        padding: 10px;
+        color: black;
+        border-radius: 50%;
+    }
+
+    .profile .profile-settings a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .profile .profile-settings .my-cards i {
+        background-color: rgb(242, 97, 145);
+    }
+
+    .profile .profile-settings .notification-settings i {
+        background-color: rgb(4, 204, 4);
+    }
+
+    .profile .profile-settings .account-settings i {
+        background-color: pink;
+    }
+
+    .profile .profile-settings .privacy-settings i {
+        background-color: bisque;
+    }
+
+    .profile nav {
+        background-color: white;
+        box-shadow: none;
+        padding: 15px;
+    }
+
+    .credit_card_main {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card_main {
+        display: block;
+        width: 280px;
+        height: 180px;
+        position: relative;
+    }
+
+    .card__part {
+        top: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 0;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 320px;
+        height: 190px;
+        background-color: #2E2E2E;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 8px;
+        -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+    }
+
+
+
+    .card__front {
+        padding: 18px;
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+    }
+
+    .card__back {
+        padding: 18px 0;
+        transform: rotateY(-180deg);
+        -webkit-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+    }
+
+    .card__black-line {
+        margin-top: 5px;
+        height: 38px;
+        background-color: #616161;
+    }
+
+    .card__logo {
+        height: 16px;
+    }
+
+    .card__front-logo {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+    }
+
+    .card__square {
+        border-radius: 5px;
+        height: 30px;
+    }
+
+    .card_numer {
+        display: block;
+        width: 100%;
+        word-spacing: 4px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .card__space-75 {
+        width: 75%;
+        float: left;
+    }
+
+    .card__space-25 {
+        width: 25%;
+        float: left;
+    }
+
+    .card__label {
+        font-size: 10px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 1px;
+    }
+
+    .card__info {
+        margin-bottom: 0;
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .card__back-content {
+        padding: 15px 15px 0;
+    }
+
+    .card__secret--last {
+        color: #303030;
+        text-align: right;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .card__secret {
+        padding: 5px 12px;
+        background-color: #fff;
+        position: relative;
+    }
+
+
+    .card__back-logo {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .card__back-square {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .card_main:hover .card__front {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+    }
+
+    .card_main:hover .card__back {
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+    }
+
+    .card__part {
+        width: 280px;
+        height: 180px;
+    }
+
+    .card_numer {
+        font-size: 16px;
+    }
+
+    .newcard {
+        display: block;
+        background-color: black;
+        width: 100%;
+        color: white;
+
+    }
+
+    .newcard .card-back .card-header {
+        background-color: #696969;
+        padding: 13px;
+        margin: 0 0 10px 0;
+    }
+
+
+    .newcard .card-back {
+        background-color: #2E2E2E;
+        border-radius: 17px;
+        padding: 20px 0 10px 0;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+    .newcard .card-back .text {
+        padding: 0 0 0 20px;
+    }
+
+    .newcard .card-back .user-card {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .switch {
+        width: 50px;
+        height: 28px;
+        background-color: #555;
+        border-radius: 30px;
+        position: relative;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .slider {
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        background-color: #ccc;
+        border-radius: 50%;
+        transition: transform 0.3s;
+    }
+
+    .switch.active {
+        background-color: #4ade80;
+    }
+
+    .switch.active .slider {
+        transform: translateX(26px);
+    }
+
+    .user {
+        padding: 10px;
+    }
+
+    .user form {
+        width: 100%;
+        padding: 40px;
+        gap: 25px;
+    }
+
+    .user form input {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        border-radius: 13px;
+        width: 100%;
+        border: 1px solid white;
+    }
+
+    .user form p {
+        padding: 3px;
+    }
+
+    .user form .input {
+        padding: 20px;
+    }
+
+    .user form .expriy-date-cvv {
+        display: flex;
+        width: 100%;
+    }
+
+    .user form button {
+        width: 100%;
+        border-radius: 15px;
+        padding: 15px 8px;
+        background-color: white;
+    }
+
+
+    .newcard nav {
+        box-shadow: none;
+        background-color: white;
+    }
+
+
+
+
+    .wallet {
+        display: block;
+    }
+
+    .wallet h2 {
+        padding: 15px 0 20px 0;
+    }
+
+    .wallet header {
+        background-color: rgb(226, 255, 215);
+        padding: 0 20px 20px 20px;
+    }
+
+    .wallet .input-box {
+        position: relative;
+    }
+
+    .wallet .input-box i {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 17px;
+        color: #555;
+    }
+
+    .wallet .input-box input {
+        width: 100%;
+        padding: 10px 10px 10px 30px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .wallet .actions .p {
+        color: #666;
+    }
+
+    .wallet .actions {
+        padding: 20px;
+        margin: 0 0 10px 0;
+
+    }
+
+    .actions .actions-box .box {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .actions .actions-box .box a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .actions .actions-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 17px 20px 18px 0;
+    }
+
+    .actions .actions-box .bx-chevron-right {
+        font-size: 30px;
+        color: #666;
+
+    }
+
+    .actions .actions-box .box .bx-mobile-alt {
+        padding: 8px;
+        border-radius: 50%;
+        background-color: rgb(175, 175, 252);
+        color: blue;
+    }
+
+    .actions .actions-box .box .bx-home-alt {
+        padding: 8px;
+        border-radius: 50%;
+        background-color: rgb(255, 215, 190);
+        color: rgb(255, 68, 0);
+    }
+
+    .actions .actions-box .box .bxs-castle {
+        padding: 8px;
+        border-radius: 50%;
+        background-color: rgb(237, 236, 236);
+        color: rgb(152, 152, 5);
+    }
+
+    .actions .actions-box .box .bx-wifi {
+        padding: 8px;
+        border-radius: 50%;
+        background-color: rgb(252, 227, 194);
+        color: burlywood;
+    }
+
+    .actions .actions-box .box .bx-cart {
+        padding: 8px;
+        border-radius: 50%;
+        background-color: plum;
+        color: purple;
+    }
+
+    .actions .actions-box .box .bxs-graduation {
+        padding: 8px;
+        border-radius: 50%;
+        background-color: rgb(240, 238, 238);
+        color: rgb(152, 152, 5);
+    }
+
+    .actions .actions-box .box .bxs-star {
+        padding: 8px;
+        border-radius: 50%;
+        background-color: rgb(191, 191, 252);
+        color: purple;
+    }
+
+    .actions .actions-box .box .bx-tv {
+        padding: 8px;
+        border-radius: 50%;
+        background-color: rgb(200, 200, 255);
+        color: blue;
+    }
+
+    .money {
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .money a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .money .box p {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    .money .box i {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+
+
+    .transactions {
+        padding: 10px;
+    }
+
+    .transactions .a {
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid #ddd;
+
+    }
+
+    .transactions .a .boxes {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 0 0;
+    }
+
+    .transactions .a .boxes .box {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .transactions .a .boxes .box i {
+        border-radius: 50%;
+        padding: 5px;
+        color: white;
+        background-color: black;
+    }
+
+
+
+    .transactions .a .boxes .box .text {
+        flex-direction: column;
+    }
+
+
+    .topup-section {
+        background-color: black;
+        display: block;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+
+    .topup-section .topup-header {
+        padding: 30px;
+        color: white;
+
+    }
+
+    .topup-section .topup-header a {
+        font-size: 34px;
+        color: white;
+    }
+
+    .topup-section .topup-header h5 {
+        padding: 20px 0 20px 0;
+        font-size: 25px;
+    }
+
+
+    .topup-section .topup-main {
+        background-color: #2E2E2E;
+        padding: 30px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        height: 100%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+
+
+    .topup-main .topup-method {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    .topup-main .topup-method .box {
+        gap: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topup-main .topup-method .box h6 {
+        color: #6f6f6f;
+    }
+
+
+
+    .topup-main .topup-method .bx {
+        padding: 8px;
+        border-radius: 50%;
+        color: black;
+        font-size: 22px;
+    }
+
+    .topup-main .topup-method .bxl-google {
+        background-color: #6e6d6d;
+    }
+
+
+    .topup-main .topup-method .bxs-bank {
+        background-color: rgb(255, 171, 185);
+    }
+
+
+
+    .topup-main .topup-method .bx-right-arrow-alt {
+        background-color: rgb(51, 51, 255);
+    }
+
+
+    .topup-main .topup-method .bx-notepad {
+        background-color: rgb(5, 160, 5);
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .card_main {
+        width: 230px;
+        height: 130px;
+    }
+
+    .card__part {
+        width: 230px;
+        height: 130px;
+        padding: 10px;
+    }
+
+    .card_numer {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .profile-section h1{
+        font-size: 1.5em;
+    }
+
+
+    .profile .profile-settings {
+        padding: 15px;
+    }
+
+    .profile-settings hr{
+        opacity: 0.4;
+    }
+
+ .topup-section .topup-main {
+        padding: 20px;
+       
+    }
+
+.credit_card_main .card_main .card__front h2{
+    font-size: 20px;
+}
+
+
+}
