@@ -896,7 +896,7 @@
 
 
     .topup-section .topup-header {
-        padding: 30px;
+        padding: 15px 30px;
         color: white;
 
     }
@@ -970,6 +970,120 @@
 
     .topup-main .topup-method .bx-notepad {
         background-color: rgb(5, 160, 5);
+    }
+
+
+
+    .payment-menu{
+        background-color: #fff;
+        height: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cashback{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+
+
+    .cashback>div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cashback>div .img{
+        display: flex;
+    }
+
+    .cashback>div .img>img{
+        width: 30px;
+    }
+
+    .cashback>div .text h5{
+        color: #949494;
+    }
+
+    .payment-inner{
+        padding: 10px 0;
+    }
+
+    .input input{
+        padding: 15px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 10px;
+        border: none;
+        width: 100%;
+    }
+
+    .input input:focus{
+        outline: none;
+    }
+
+    .cash-item{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .cash-item input{
+        width: 100%;
+    }
+
+    .cash-item select,
+    .cash-item input{
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
+
+     
+
+    .cash-item select:focus,
+    .cash-item input{
+        outline: none;
+    }
+    .plus{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .plus button{
+        padding: 15px;
+        color: #696969;
+        border-radius: 5px;
+        text-align: center;
+        border: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    
+
+    .payment-button button{
+        padding: 15px;
+        background-color: #111;
+        color: #fff;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
 
 }
